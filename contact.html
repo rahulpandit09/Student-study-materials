@@ -1,0 +1,149 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+<title>Contact</title>  
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'notes.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  <style>
+    /* General Body Styling */
+    body {
+        font-family: Arial, sans-serif;
+        background-color:rgb(47, 47, 189);
+        background-image: url(..static/images/contectjpg.jpg);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #333;
+    }
+    
+    /* Container for the form */
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    /* Form Label Styling */
+    label {
+        font-weight: bold;
+        margin-bottom: 8px;
+        display: block;
+        color: #555;
+    }
+    
+    /* Form Input Styling */
+    input, textarea {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0 16px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+    /* Focus Styling for Input and Textarea */
+    input:focus, textarea:focus {
+        border-color: #3498db;
+        outline: none;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.2);
+    }
+    
+    /* Button Styling */
+    button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Button Hover Effect */
+    button:hover {
+        background-color: #2980b9;
+    }
+    
+    /* Success Message Styling */
+    p {
+        font-size: 18px;
+        font-weight: bold;
+        color: #28a745;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        form {
+            padding: 15px;
+            width: 90%;
+        }
+    
+        button {
+            width: 100%;
+        }
+    }
+    
+</style>
+
+</head>
+
+<body>
+  
+      <!-- Display success message -->
+      {% if success_message %}
+          <p style="color: green;">{{ success_message }}</p>
+      {% endif %}
+  
+      <!-- Contact form -->
+      <form method="POST">
+          {% csrf_token %}
+          <label for="name">Name:</label><br>
+          <input type="text" name="name" required><br><br>
+  
+          <label for="email">Email:</label><br>
+          <input type="email" name="email" required><br><br>
+  
+          <label for="phone">Phone:</label><br>
+          <input type="text" name="phone" required><br><br>
+  
+          <label for="message">Message:</label><br>
+          <textarea name="message" required></textarea><br><br>
+  
+          <button type="submit">Send Message</button>
+      </form>
+  </body>
+  </html>
+  

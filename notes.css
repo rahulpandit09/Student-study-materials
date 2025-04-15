@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: 6a8194;
+    line-height: 1.1;
+    margin: 1;
+    padding: 10;
+}
+
+/* Header styles */
+header {
+
+
+    color: #e0d8d8;
+    text-align: center;
+
+
+}
+
+h2 {
+    text-align: center;
+    color: #201616;
+}
+
+
+h4 {
+    text-align: center;
+    color: #201616;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav ul li a {
+    color: #0c0b0baf;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: #c32d2d;
+    ;
+
+}
+
+/* Section styles */
+section {
+    background-color: #d5d9dd;
+    ;
+    padding: 30px;
+    margin: 1%;
+    border-radius: 5px;
+
+    margin: 5%;
+
+}
+
+section h2 {
+    color: #0e0d0d;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    flex-wrap: wrap;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#semester1,
+#semester2,
+#semester3,
+#semester4,
+#semester5,
+#semester6 {
+    flex: 1 2 calc(100px - 20px);
+    margin: 10px;
+}
+
+
+
+
+
+.footer-social-media {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-social-media .footer-contact {
+    margin-bottom: 15px;
+}
+
+.footer-social-media .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social-media .social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-social-media .social-icons a i {
+    font-size: 24px;
+    color: #222;
+}
+
+.footer-social-media .social-icons a:hover {
+    transform: scale(1.15);
+}
+
+.footer-social-media .facebook:hover {
+    background-color: #1877F2;
+}
+
+.footer-social-media .instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.footer-social-media .twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.footer-social-media .social-icons a:hover i {
+    color: #fff;
+}
+
+.footer-contact .contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-contact .contact-link:hover {
+    color: #4CAF50;
+}
+
+.sea {
+    width: 1515px;
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #007bff;
+    padding: 10px;
+}
+
+.marquee {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    animation: marquee 10s linear infinite;
+}
+
+/*  contect section */
+.contact_section {
+    position: relative;
+  /*  background-color: #1a1a1d;*/
+    background-image: url(..static/images/contectjpg.jpg);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .contact_section .heading_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .contact_section .heading_container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Center the form */
+  .contact_section .form_container {
+    max-width: 500px;
+    margin: 0 auto; /* This centers the form horizontally */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the form content */
+  }
+  
+  .contact_section input,
+  .contact_section textarea {
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
+    color: #000;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  
+  .contact_section input::placeholder,
+  .contact_section textarea::placeholder {
+    color: #d7d3d3;
+  }
+  
+  .contact_section button {
+    padding: 12px 50px;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    background: #8d596b;
+    margin-top: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact_section button:hover {
+    background: #6a3e4e;
+  }
+
+
+
+  

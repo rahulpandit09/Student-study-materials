@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first notes</title>
+    <link rel="stylesheet" href="{% static 'notes.css' %}"> 
+   <!-- <link rel="stylesheet" href="static-css/notes.css"> -->
+   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+</head>
+
+<body class="text">
+    <header>
+        <img class="sea" src="static/img/sea.jpg" alige="center" alt="" height="400" width="1380" margin="20" />
+    </header>
+    <div class="marquee-container">
+        <div class="marquee">SEA College Of Science, Commerce &amp; Arts</div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/master-cs">MASTERS FOR COMPUTER SCIENCE </a></li>
+            <li><a href="/commers-mc">MASTERS FOR COMMERCE </a></li>
+        </ul>
+    </nav>
+
+    <div class="semester1">
+        <h2> EASY NOTES</h2>
+        <section id="semester1">
+            <nav>
+                <ul>
+                    <li><a class="text1" href="/bca">BCA</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    
+    <div class="semester2">
+        <section id="semester1">
+            <nav>
+                <ul>
+                    <li><a href="/bsc">BSC</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+
+    <section id="semester2">
+        <nav>
+            <ul>
+                <li><a href="/bcom">B.COM</a></li>
+            </ul>
+        </nav>
+    </section>
+
+   <section id="semester3">
+        <nav>
+            <ul>
+                <li><a href="/bba">BBA</a></li>
+            </ul>
+        </nav>
+    </section>
+
+   
+    
+
+
+    <footer>
+        <div class="footer-social-media">
+            <div class="footer-contact">
+                <a href="/contact" class="contact-link">Contact Us</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" class="facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" class="instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/home" class="twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+
+</html>

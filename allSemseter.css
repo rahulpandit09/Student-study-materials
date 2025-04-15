@@ -1,0 +1,160 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+    margin: 1;
+    padding: 10;
+}
+
+/* Header styles */
+header {
+   
+    
+    color: #e0d8d8;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #333;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    color: #c32d2d;
+}
+
+/* Section styles */
+section {
+    background-color: #eee9e9;
+    padding: 30px;
+    margin: 1%;
+    border-radius: 5px;
+    
+    margin: 5%;
+
+}
+
+section h2 {
+    color: #0e0d0d;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    flex-wrap: wrap;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#semester1,
+#semester2,
+#semester3,
+#semester4,
+#semester5,
+#semester6 {
+    flex: 1 2 calc(100px - 20px); /* Adjust width and margin as needed */
+    margin: 10px;
+}
+
+
+
+
+
+/* Link styles */
+a {
+    color: #007bff;
+    margin-top: auto;
+    text-decoration: none;
+    
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; 
+    padding: 10px 20px;
+    border-radius: 8px;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }  
+  .marquee-container {
+
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #007bff;
+    padding: 10px;
+  }
+  
+  .marquee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    animation: marquee 10s linear infinite; 
+  }

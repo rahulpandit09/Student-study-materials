@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.semester {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+
+}
+
+.left-side,
+.right-side {
+    width: calc(50% - 10px);
+
+
+}
+
+.center-semesters {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    float: right;
+}
+
+/* CSS for styling the social media links */
+.social-media {
+    background-color: #4e4a4a;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #080808;
+    font-size: 24px;
+
+}
+
+.social-media a:hover {
+    color: #187ae2;
+    /* Change color on hover */
+}
